@@ -1,7 +1,6 @@
 package test;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -14,7 +13,7 @@ import pageobject_model.pagefactory.PastebinResultPage;
 
 public class PastebinTests extends BaseTest {
 
-    //@RepeatedTest(5)
+
     @ParameterizedTest
     @MethodSource("provideTextAreaValues")
     public void textAreaAndComboboxTest(String text, String expiration, String resultExpiration, String expirationTimeForJS) {
